@@ -1,0 +1,27 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/08/30 21:25:10 by mandress          #+#    #+#             */
+/*   Updated: 2021/09/16 18:58:04 by mandress         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+char *ft_strrchr(const char *str, int c)
+{
+	int i;
+	char *find;
+
+	i = 0;
+	while (*str)
+	{
+		if (*str == c)
+			find = (char *)str;
+		str++;
+	}
+	return((char *)find);
+}
