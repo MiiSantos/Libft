@@ -6,13 +6,15 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/16 22:13:13 by mandress          #+#    #+#             */
-/*   Updated: 2021/08/24 17:08:51 by mandress         ###   ########.fr       */
+/*   Updated: 2021/09/16 23:30:14 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isalpha(int a)
 {
 	if ((a >= 'A' && a <= 'Z') || (a >= 'a' && a <= 'z'))
-		return(1);
+		return (1);
 	return (0);
 }

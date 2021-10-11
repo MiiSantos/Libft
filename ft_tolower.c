@@ -6,14 +6,15 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/18 15:07:12 by mandress          #+#    #+#             */
-/*   Updated: 2021/08/19 16:16:55 by mandress         ###   ########.fr       */
+/*   Updated: 2021/09/16 23:47:25 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include "libft.h"
+
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
-	return(c);
+	return (c);
 }

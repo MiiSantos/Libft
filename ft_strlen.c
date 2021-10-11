@@ -6,11 +6,13 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 15:26:36 by mandress          #+#    #+#             */
-/*   Updated: 2021/09/16 19:45:04 by mandress         ###   ########.fr       */
+/*   Updated: 2021/10/09 13:28:31 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+#include "libft.h"
+
+int	ft_strlen(const char *str)
 {
 	unsigned int	i;
 

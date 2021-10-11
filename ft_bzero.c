@@ -6,11 +6,10 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/19 21:22:39 by mandress          #+#    #+#             */
-/*   Updated: 2021/08/24 14:06:10 by mandress         ###   ########.fr       */
+/*   Updated: 2021/09/16 23:28:21 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)

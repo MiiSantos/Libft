@@ -6,11 +6,12 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 12:27:25 by mandress          #+#    #+#             */
-/*   Updated: 2021/08/24 17:14:25 by mandress         ###   ########.fr       */
+/*   Updated: 2021/09/16 23:02:24 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdio.h>
+#include "libft.h"
 
 int	ft_isdigit(int a)
 {

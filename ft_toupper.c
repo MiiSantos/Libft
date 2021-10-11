@@ -6,14 +6,15 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 20:04:23 by mandress          #+#    #+#             */
-/*   Updated: 2021/08/21 10:47:10 by mandress         ###   ########.fr       */
+/*   Updated: 2021/09/16 23:47:42 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdio.h>
+#include "libft.h"
+
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (c - 32);
-	return(c);
+	return (c);
 }

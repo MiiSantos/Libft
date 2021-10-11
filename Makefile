@@ -6,12 +6,11 @@
 #    By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/19 15:21:03 by mandress          #+#    #+#              #
-#    Updated: 2021/09/16 20:12:04 by mandress         ###   ########.fr        #
+#    Updated: 2021/10/09 18:26:25 by mandress         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC	= main.c \
-	ft_atoi.c \
+SRC	= ft_atoi.c \
 	ft_bzero.c \
 	ft_calloc.c \
 	ft_isalnum.c \
@@ -24,10 +23,13 @@ SRC	= main.c \
 	ft_memmove.c \
 	ft_memset.c \
 	ft_strchr.c \
+	ft_strdup.c \
 	ft_strlcat.c \
 	ft_strlcpy.c \
 	ft_strlen.c \
-	ft_strnchr.c \
+	ft_strnstr.c \
+	ft_strrchr.c \
+	ft_substr.c \
 	ft_strncmp.c \
 	ft_strrchr.c \
 	ft_toupper.c \
@@ -48,9 +50,11 @@ $(OBJS):	$(SRC)
 	clang $(FLAGS) -c $(SRC)
 
 clean:
-	rm $(OBJS)
+	rm -f $(OBJS)
+
 fclean:	clean
-	rm $(NAME)
+	rm -f $(NAME)
+
 re:	fclean all
 
 .PHONY: all clean fclean re

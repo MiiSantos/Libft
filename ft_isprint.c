@@ -6,13 +6,13 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 15:05:10 by mandress          #+#    #+#             */
-/*   Updated: 2021/08/29 11:41:35 by mandress         ###   ########.fr       */
+/*   Updated: 2021/09/17 10:41:56 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int a)
 {
-	if (a <= 32 || a > 127)
+	if (a >= 32 && a <= 126)
 		return (1);
 	return (0);
 }
