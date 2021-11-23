@@ -6,7 +6,7 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/09 18:00:06 by mandress          #+#    #+#             */
-/*   Updated: 2021/11/23 18:23:33 by mandress         ###   ########.fr       */
+/*   Updated: 2021/11/23 18:47:18 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	char	*sub;
 	size_t	size;
+	size_t	control;
 
 	size = ft_strlen(s);
 	if (!s)
@@ -27,6 +28,9 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 			return (NULL);
 		return (sub);
 	}
+	control = size - start;
+	if (control < len)
+		len = control;
 	sub = (char *)malloc((sizeof(char) * len) + 1);
 	if (!sub)
 		return (0);
