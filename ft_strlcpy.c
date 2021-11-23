@@ -6,7 +6,7 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/28 21:49:54 by mandress          #+#    #+#             */
-/*   Updated: 2021/10/09 13:26:09 by mandress         ###   ########.fr       */
+/*   Updated: 2021/11/23 17:05:40 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	size_t	i;
 
 	i = 0;
-	if ((src == 0) || (dest == 0))
+	if (!src && !dest && size > 0)
 		return (0);
 	if (size > 0)
 	{

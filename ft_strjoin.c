@@ -6,7 +6,7 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 18:07:34 by mandress          #+#    #+#             */
-/*   Updated: 2021/10/15 15:40:24 by mandress         ###   ########.fr       */
+/*   Updated: 2021/11/23 17:09:11 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	j;
 
 	new = (char *)malloc((sizeof(char) * (ft_strlen(s1) + ft_strlen(s2) + 1)));
+	if (!new)
+		return (0);
 	i = 0;
 	while (s1[i] != '\0')
 	{

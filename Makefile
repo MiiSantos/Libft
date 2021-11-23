@@ -6,11 +6,11 @@
 #    By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/19 15:21:03 by mandress          #+#    #+#              #
-#    Updated: 2021/11/23 14:21:17 by mandress         ###   ########.fr        #
+#    Updated: 2021/11/23 16:35:04 by mandress         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC	= ft_atoi.c \
+SRCS	= ft_atoi.c \
 	ft_bzero.c \
 	ft_calloc.c \
 	ft_isalnum.c \
@@ -55,7 +55,7 @@ SRC	= ft_atoi.c \
 
 NAME	= libft.a
 
-OBJS	= $(SRC:.c=.o)
+OBJS	= $(SRCS:.c=.o)
 
 FLAGS	= -Wall -Werror -Wextra
 
@@ -64,8 +64,12 @@ all:	$(NAME)
 $(NAME):	$(OBJS)
 	ar -rcs $(NAME) $(OBJS)
 
-$(OBJS):	$(SRC)
-	clang $(FLAGS) -c $(SRC)
+$(OBJS):	$(SRCS)
+	clang $(FLAGS) -c $(SRCS)
+
+so:
+	clang -fPIC $(FLAGS) $(SRCS)
+	gcc -shared -o libft.so $(OBJS)
 
 clean:
 	rm -f $(OBJS)

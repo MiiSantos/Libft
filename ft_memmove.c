@@ -6,7 +6,7 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/24 17:48:37 by mandress          #+#    #+#             */
-/*   Updated: 2021/10/09 12:00:33 by mandress         ###   ########.fr       */
+/*   Updated: 2021/11/23 17:04:27 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memmove(void *str1, const void *str2, size_t size)
 	unsigned char	*dest;
 	size_t			i;
 
+	if (!str1 && !str2 && size > 0)
+		return (0);
 	i = 0;
 	src = (unsigned char *)str2;
 	dest = (unsigned char *)str1;
