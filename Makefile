@@ -6,7 +6,7 @@
 #    By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/19 15:21:03 by mandress          #+#    #+#              #
-#    Updated: 2021/11/23 17:16:43 by mandress         ###   ########.fr        #
+#    Updated: 2021/11/23 19:32:17 by mandress         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,8 +43,9 @@ SRCS	= ft_atoi.c \
 	ft_substr.c \
 	ft_strncmp.c \
 	ft_toupper.c \
-	ft_tolower.c \
-	ft_lstnew.c \
+	ft_tolower.c
+
+BONUS	= ft_lstnew.c \
 	ft_lstadd_front.c \
 	ft_lstsize.c \
 	ft_lstlast.c \
@@ -58,6 +59,8 @@ NAME	= libft.a
 
 OBJS	= $(SRCS:.c=.o)
 
+BONUS_OBJS	= $(BONUS:.c=.o)
+
 FLAGS	= -Wall -Werror -Wextra
 
 all:	$(NAME)
@@ -68,16 +71,18 @@ $(NAME):	$(OBJS)
 $(OBJS):	$(SRCS)
 	clang $(FLAGS) -c $(SRCS)
 
-so:
-	clang -fPIC $(FLAGS) $(SRCS)
-	gcc -shared -o libft.so $(OBJS)
+bonus:	$(BONUS_OBJS)
+	ar -rcs $(NAME) $(BONUS_OBJS)
+
+$(BONUS_OBJS):	$(BONUS)
+	clang $(FLAGS) -c $(BONUS)
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) $(BONUS_OBJS)
 
 fclean:	clean
 	rm -f $(NAME)
 
 re:	fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all bonus clean fclean re
