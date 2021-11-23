@@ -6,7 +6,7 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/21 10:42:58 by mandress          #+#    #+#             */
-/*   Updated: 2021/11/17 12:47:57 by mandress         ###   ########.fr       */
+/*   Updated: 2021/11/19 18:25:12 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 # include <stdlib.h>
 # include <stddef.h>
 
-typedef struct	s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
@@ -149,7 +149,9 @@ size_t		ft_memcmp(const void *str1, const void *str2, size_t nb);
 void		*ft_memcpy(void *dest, const void *src, size_t size);
 
 /**
- * @brief The C library function void *ft_memmove() copies n characters from str2 to str1, but for overlapping memory blocks, memmove() is a safer approach than memcpy().
+ * @brief The C library function void *ft_memmove() copies n characters from
+ * str2 to str1, but for overlapping memory blocks, memmove() is a safer
+ * approach than memcpy().
  * @param str1 This is a pointer to the destination array where the content is]
  * to be copied, type-casted to a pointer of type void*.
  * @param str2 This is a pointer to the source of data to be copied,
@@ -365,24 +367,22 @@ int			ft_tolower(int c);
  */
 int			ft_toupper(int c);
 
-//Bonus
+t_list		*ft_lstnew(void *content);
 
-t_list	*ft_lstnew(void *content);
+void		ft_lstadd_front(t_list **lst, t_list *new);
 
-void	ft_lstadd_front(t_list **lst, t_list *new);
+int			ft_lstsize(t_list *lst);
 
-int	ft_lstsize(t_list *lst);
+t_list		*ft_lstlast(t_list *lst);
 
-t_list	*ft_lstlast(t_list *lst);
+void		ft_lstadd_back(t_list **lst, t_list *new);
 
-void	ft_lstadd_back(t_list **lst, t_list *new);
+void		ft_lstdelone(t_list *lst, void (*del)(void*));
 
-void	ft_lstdelone(t_list *lst, void (*del)(void*));
+void		ft_lstclear(t_list **lst, void (*del)(void*));
 
-void	ft_lstclear(t_list **lst, void (*del)(void*));
+void		ft_lstiter(t_list *lst, void (*f)(void *));
 
-void	ft_lstiter(t_list *lst, void (*f)(void *));
-
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *));
+t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 #endif

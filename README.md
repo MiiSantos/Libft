@@ -3,7 +3,7 @@
 
 ### What's libft?
 
-It's a 42 SP school project that requires re-create some of Standard C Library functions that will be used during the rest of the program in the future projects.
+It's a project from 42SP that requires re-create some of Standard C Library functions that will be used during the rest of the program in the future projects.
 
 ### Libc Functions 💣
 
@@ -31,6 +31,29 @@ It's a 42 SP school project that requires re-create some of Standard C Library f
 • calloc
 • strdup
 
-### Adicional Functions 🛠️
+### Adicional Functions 💎
 
-working on it...
+• ft_substr
+• ft_strjoin
+• ft_strtrim
+• ft_split
+• ft_split
+• ft_strmapi
+• ft_striteri
+• ft_striteri
+• ft_putstr_fd
+• ft_putstr_fd
+• ft_putnbr_fd
+
+### Bonus Functions 🔐
+
+• ft_lstnew
+• ft_lstadd_front
+• ft_lstsize
+• ft_lstadd_back
+• ft_lstdelone
+• ft_lstclear
+• ft_lstiter
+• ft_lstiter
+
+That1s all folks!

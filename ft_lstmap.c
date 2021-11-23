@@ -6,13 +6,13 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 12:47:20 by mandress          #+#    #+#             */
-/*   Updated: 2021/11/17 15:23:32 by mandress         ###   ########.fr       */
+/*   Updated: 2021/11/19 18:27:10 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *),void (*del)(void *))
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new;
 	t_list	*aux;

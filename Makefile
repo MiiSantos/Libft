@@ -6,7 +6,7 @@
 #    By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/19 15:21:03 by mandress          #+#    #+#              #
-#    Updated: 2021/11/17 12:56:14 by mandress         ###   ########.fr        #
+#    Updated: 2021/11/23 14:21:17 by mandress         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,6 @@ SRC	= ft_atoi.c \
 	ft_strtrim.c \
 	ft_substr.c \
 	ft_strncmp.c \
-	ft_strrchr.c \
 	ft_toupper.c \
 	ft_tolower.c \
 	ft_lstnew.c \
