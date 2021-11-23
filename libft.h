@@ -6,7 +6,7 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/21 10:42:58 by mandress          #+#    #+#             */
-/*   Updated: 2021/11/19 18:25:12 by mandress         ###   ########.fr       */
+/*   Updated: 2021/11/23 18:22:19 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ typedef struct s_list
  * @return This function returns the converted integral number as an int value.
  * If no valid conversion could be performed, it returns zero.
  */
-long int	ft_atoi(const char *str);
+int			ft_atoi(const char *str);
 
 /**
  * @brief The bzero function erases the data in the n bytes of the memory

@@ -6,13 +6,13 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/05 20:46:50 by mandress          #+#    #+#             */
-/*   Updated: 2021/10/09 17:50:37 by mandress         ###   ########.fr       */
+/*   Updated: 2021/11/23 17:52:48 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long int	ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	sign;

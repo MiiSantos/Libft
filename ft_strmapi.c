@@ -6,7 +6,7 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/15 16:33:35 by mandress          #+#    #+#             */
-/*   Updated: 2021/10/15 16:40:20 by mandress         ###   ########.fr       */
+/*   Updated: 2021/11/23 18:28:25 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!s)
 		return (0);
 	size = ft_strlen(s);
-	ret = (char *)malloc(sizeof(char *) * (size + 1));
+	ret = (char *)malloc(sizeof(char) * (size + 1));
 	if (!ret)
 		return (0);
 	while (s[i])
