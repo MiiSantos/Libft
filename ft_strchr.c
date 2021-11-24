@@ -6,7 +6,7 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 20:50:01 by mandress          #+#    #+#             */
-/*   Updated: 2021/10/09 11:38:01 by mandress         ###   ########.fr       */
+/*   Updated: 2021/11/24 12:09:14 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 char	*ft_strchr(const char *str, int c)
 {
-	char	ch;
+	char	a;
 
-	ch = c;
+	a = c;
 	while (*str)
 	{
-		if (*str == ch)
+		if (*str == a)
 			return ((char *)str);
 		str++;
 	}
-	if (ch == '\0')
+	if (a == '\0')
 		return ((char *)str);
 	return (0);
 }

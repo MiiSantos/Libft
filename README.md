@@ -56,4 +56,4 @@ It's a project from 42SP that requires re-create some of Standard C Library func
 • ft_lstiter
 • ft_lstiter
 
-That1s all folks!
+That's all folks! 🐰

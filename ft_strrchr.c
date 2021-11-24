@@ -6,7 +6,7 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/30 21:25:10 by mandress          #+#    #+#             */
-/*   Updated: 2021/10/09 13:43:55 by mandress         ###   ########.fr       */
+/*   Updated: 2021/11/24 12:06:44 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,16 @@
 
 char	*ft_strrchr(const char *str, int c)
 {
-	int		i;
-	char	*find;
+	size_t		a;
 
-	i = 0;
-	find = NULL;
+	a = ft_strlen(str);
 	if (c == 0)
 		return (ft_strchr(str, '\0'));
-	while (*str)
+	while (a)
 	{
-		if (*str == c)
-			find = (char *)str;
-		str++;
+		a--;
+		if (str[a] == (unsigned char)c)
+			return ((char *)str + a);
 	}
-	return (find);
+	return (0);
 }
