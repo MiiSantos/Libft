@@ -6,7 +6,7 @@
 /*   By: mandress <mandress@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/13 22:08:51 by mandress          #+#    #+#             */
-/*   Updated: 2021/11/24 12:45:52 by mandress         ###   ########.fr       */
+/*   Updated: 2021/11/24 13:12:47 by mandress         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,19 @@
 
 size_t	ft_memcmp(const void *str1, const void *str2, size_t nb)
 {
-	unsigned char	*a;
-	unsigned char	*b;
+	size_t	i;
 
-	if (!nb)
-		return (0);
-	a = (unsigned char *)str1;
-	b = (unsigned char *)str2;
-	while ((nb - 1 > 0) && (*a == *b))
+	i = 0;
+	while (i < nb)
 	{
-		nb--;
-		a++;
-		b++;
+		if ((((unsigned char *)str1)[i]) != ((unsigned char *)str2)[i])
+		{
+			return (((unsigned char *)str1)[i] - ((unsigned char *)str2)[i]);
+		}
+		else
+		{
+			i++;
+		}
 	}
-	return (*a - *b);
+	return (0);
 }
