@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-size_t	ft_memcmp(const void *str1, const void *str2, size_t nb)
+int	ft_memcmp(const void *str1, const void *str2, size_t nb)
 {
 	size_t	i;
 

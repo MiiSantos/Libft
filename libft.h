@@ -134,7 +134,7 @@ void		*ft_memchr(const void *str, int c, size_t n);
  * @return This function returns a pointer to the matching byte or NULL if the
  * character does not occur in the given memory area.
  */
-size_t		ft_memcmp(const void *str1, const void *str2, size_t nb);
+int			ft_memcmp(const void *str1, const void *str2, size_t nb);
 
 /**
  * @brief This function copies n characters from memory area src to memory area
